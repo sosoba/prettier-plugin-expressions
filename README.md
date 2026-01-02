@@ -1,7 +1,6 @@
 # @sosoba/prettier-plugin-expressions
 
-[![CI](https://github.com/sosoba/prettier-plugin-expressions/actions/workflows/ci.yml/badge.svg)](https://github.com/sosoba/prettier-plugin-expressions/actions/workflows/ci.yml)
-[![npm version](https://badge.fury.io/js/is-errno-exception.svg)](https://badge.fury.io/js/is-errno-exception)
+[![npm version](https://badge.fury.io/js/@sosoba%2Fprettier-plugin-expressions.svg)](https://badge.fury.io/js/@sosoba%2Fprettier-plugin-expressions)
 
 This is a prettier plugin which improves the readability of expressions by surrounding them with bracket even if they are not necessary for calculating machines.
 
