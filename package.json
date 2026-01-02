@@ -1,6 +1,6 @@
 {
   "name": "@sosoba/prettier-plugin-expressions",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Prettier plugin which which improves the readability of expressions by surrounding them with brackets",
   "keywords": [
     "prettier",
