@@ -28,7 +28,7 @@
     "test": "tsc && node --test",
     "preversion": "npm whoami && npm run build",
     "version": "npm publish",
-    "postversion": "git push v${npm_version}"
+    "postversion": "git push origin v${npm_package_version}"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
