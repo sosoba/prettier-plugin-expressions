@@ -1,0 +1,46 @@
+{
+  "name": "@sosoba/prettier-plugin-expressions",
+  "version": "0.0.0",
+  "description": "Prettier plugin which which improves the readability of expressions by surrounding them with brackets",
+  "keywords": [
+    "prettier",
+    "plugin",
+    "expressions",
+    "brackets"
+  ],
+  "bugs": {
+    "url": "https://github.com/sosoba/prettier-plugin-expressions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sosoba/prettier-plugin-expressions.git"
+  },
+  "license": "ISC",
+  "author": "Sławomir Osoba",
+  "type": "module",
+  "exports": "./dist/plugin.js",
+  "files": [
+    "./dist/plugin.js"
+  ],
+  "scripts": {
+    "build": "esbuild ./src/plugin.ts --bundle --minify --packages=external --format=esm --outdir=./dist/",
+    "prepare": "husky",
+    "test": "tsc && node --test",
+    "preversion": "npm whoami && npm run build",
+    "version": "npm publish",
+    "postversion": "git push v${npm_version}"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/node": "^22.19.3",
+    "esbuild": "^0.25.12",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.7.4",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "prettier-plugin-packagejson": "^2.5.20"
+  }
+}
